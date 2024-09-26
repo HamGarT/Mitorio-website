@@ -1,0 +1,116 @@
+/*barra de navegacion*/
+.logo img{
+    width: 100px;
+}
+
+nav{
+    width:100%;
+    z-index:999;
+    background-color: #1c1e23;
+}
+.nav-center{
+    width: 90vw;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.links li{
+    padding: 0px 12px;
+}
+.links li a{
+    color: #fff;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.carousel-inner,
+.layer,
+.carousel-item{
+    height: 100%;
+    overflow: hidden;
+}
+
+.container-cards > div:not(:last-child){
+    margin-right: 40px;
+}
+.ourFutures{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+
+/* banner politicas */
+
+.banner-politicas{
+    height:200px;
+    background:linear-gradient(90deg, rgba(80,71,93,0.5) 20%, rgba(33,55,82,0.5) 85%), url(http://wp.magnium-themes.com/thebuilt/thebuilt-8/wp-content/uploads/2016/03/photodune-5949525-builder-with-blueprint-shaking-partner-hand-m.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.banner-politicas h2{
+    font-weight: 300;
+    top: 50%;
+    left: 10%;
+    color:#fff;
+}
+
+/* CARDS POLITICAS */
+.maincard {
+    position: relative;
+    width: 300px;
+    height: 300px
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+    
+}
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hidden;
+    
+    color: #2a2f35 ;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    padding: 10px
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: hidden;
+    background: #FABF05;
+    color: #2a2f35 ;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    border: 1px solid #eee;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    padding: 10px
+}
+
+.user_name {
+    color: #eee;
+    font-size: 10px;
+    margin-top: 0px
+}
+
+.about {
+    font-size: 12px
+}

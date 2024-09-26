@@ -1,0 +1,149 @@
+/* nav bar estilos */
+.logo img{
+    width: 100px;
+}
+
+nav{
+    width: 100%;
+    z-index:999;
+    background-color: #1c1e23;
+}
+.nav-center{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links li{
+    display: inline-block;
+    padding: 0px 12px;
+}
+.links li a{
+    color: #fff;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.carousel-inner,
+.layer,
+.carousel-item{
+    height: 100%;
+    overflow: hidden;
+}
+
+.container-cards > div:not(:last-child){
+    margin-right: 40px;
+}
+.ourFutures{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+
+/*BANNER */
+
+.banner-c{
+    height:300px;
+    background:linear-gradient(90deg, rgba(80,71,93,0.5) 20%, rgba(33,55,82,0.5) 85%), url(https://revistaconstruir.com/wp-content/uploads/2018/01/construccion-770x769-1-750x375.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.banner-c h2{
+    font-weight: 300;
+    top: 50%;
+    left: 10%;
+    color:#fff;
+}
+/* comapany certifications */
+
+.container-general-certification{
+    width: 80%;
+    margin: auto;
+    margin-top:50px;
+}
+
+.c-descriptions h3::before{
+content: '';
+height: 2px;
+width: 100px;
+position: absolute;
+bottom: 0;
+left: 0;
+margin-top:s;
+background-color:#FABF05;
+}
+.sb-c-banner div{
+   margin: auto 0;
+}
+
+.sb-c-banner{
+    margin:40px 0;
+}
+
+ /* certificados cards */
+
+ .cards-certification{
+     
+     margin-top: 80px;
+     display: grid;
+     grid-auto-rows: 23rem;
+     grid-template-columns:repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+ }
+
+ .card{
+     margin-top: 20px;
+     text-align: center;
+    
+ }
+
+ .radius-icon i{
+     color: #fff;
+     font-size: 24px;
+     width:70px;
+     height: 70px;
+     line-height: 68px;
+     text-align: center;
+     background-color:#828282;
+     border-radius: 50%;
+ }
+
+ /*menu hamburguesa */
+
+.nav-toggle{
+    display: none;
+}
+
+@media (max-width:900px){
+    .nav-toggle{
+        display: block;
+        background: transparent;
+        border: none;
+        
+    }
+    .nav-toggle i{
+        color:#fff;
+        font-size:24px;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-center{
+        display: block;
+    }
+    .links li {
+        display:block;
+    }
+    nav{
+        background-color: #1c1e23;
+    }
+
+    .links-container{
+        height: 0;
+        overflow: hidden;
+    }
+}

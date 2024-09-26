@@ -1,0 +1,266 @@
+/*barra de navegacion*/
+.logo img{
+    width: 100px;
+}
+
+nav{
+    width:100%;
+    z-index:999;
+    background-color: #1c1e23;
+}
+.nav-center{
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.links li{
+    padding: 0px 12px;
+    display: inline-block;
+}
+.links li a{
+    color: #fff;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.carousel-inner,
+.layer,
+.carousel-item{
+    height: 100%;
+    overflow: hidden;
+}
+
+.container-cards > div:not(:last-child){
+    margin-right: 40px;
+}
+.ourFutures{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+.links-container{
+    display: flex;
+    align-items: center;
+}
+
+/* banner simple */
+
+.bn-simple{
+    background: linear-gradient(90deg, rgba(80,71,93,0.5) 20%, rgba(33,55,82,0.5) 85%),url(../sources/nosotros-bn-simple.jpg) center/cover no-repeat ; 
+    height:300px;
+}
+
+.bn-simple h2{
+    font-weight: 300;
+    top: 50%;
+    left: 10%;
+    color:#fff;
+}
+
+/* banner animado */
+
+.container-bn-animado{
+    width: 80%;
+    margin: auto;
+    margin-top:80px;
+   
+    background-image:url(https://wp.magnium-themes.com/thebuilt/thebuilt-8/wp-content/uploads/2016/03/photodune-4468168-builder-worker-installing-concrete-slab-m.jpg);
+    background-size: cover;
+}
+
+.bn-animado{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+    
+}
+
+.bn-animado div{
+    padding: 70px;
+    margin: auto;
+}
+
+/* quines somos */
+
+.container-general-qs{
+    width:80%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.container-qs{
+    margin-top: 0px 20px;
+    background-color: rgb(245, 245, 245);
+}
+.c-great-text{
+    flex-basis: 50%;
+    padding:0px 50px;
+    margin: auto;
+}
+
+.c-tech{
+    flex-basis: 50%;
+    padding: 50px;
+    background-image: url(http://wp.magnium-themes.com/thebuilt/thebuilt-8/wp-content/uploads/2016/03/hand-background.jpg?id=422);
+    background-size: cover;
+}
+
+.sb-tech .d-flex i{
+    color: #FABF05;
+    font-size: 40px;
+    margin:0px 20px;
+    
+}
+
+.d-flex:hover .d-flex i{
+ transform: scale(0.9);
+ transition: all 0.1s;
+}
+
+/* mision y vision */
+
+.container-general-mv{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.container-mv{
+    margin-top:50px;
+    display: grid;
+   align-items: center;
+    grid-auto-rows: 31rem;
+    gap: 1rem;
+    grid-template-columns:repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+}
+
+.container-mv > div{
+justify-items: center;
+}
+/* banner video */
+#bn-video{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+#bn-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  #bn-video .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  #bn-video .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  #bn-video .container h3{
+    font-size: 38px;
+    font-weight: 500;
+  }
+
+
+
+
+
+/* botones */
+#btn{
+    text-decoration: none;
+    color: #2A2F35;
+    padding: 10px 20px;
+    background-color: #FABF05;
+    position: relative;
+    border: none;
+}
+
+#btn::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background-color: #2A2F35  ;
+    transition: width 0.5s;
+}
+
+#btn:hover::before{
+ width:100%;
+}
+#btn:hover span{
+    position: relative;
+    color: #fff;
+}
+
+
+/* medias quaries */
+
+@media (max-width:700px){
+    .container-qs{
+        flex-direction: column;
+    }
+    .c-great-text{
+        padding: 30px;
+    }
+}
+
+/*menu hamburguesa */
+
+.nav-toggle{
+    display: none;
+    background:none;
+}
+
+@media (max-width:900px){
+    .nav-toggle{
+        display: block;
+        background: transparent;
+        border: none;
+        
+    }
+    .nav-toggle i{
+        color:#fff
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-center{
+        display: block;
+    }
+    .links li {
+        display:block;
+    }
+    nav{
+        background-color: #1c1e23;
+    }
+
+    .links-container{
+        height: 0;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,184 @@
+/*barra de navegacion*/
+.logo img{
+    width: 100px;
+}
+
+nav{
+
+    width:100%;
+    z-index:999;
+    background-color: #1c1e23;
+}
+.nav-center{
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.links li{
+    display: inline-block;
+    padding: 0px 12px;
+}
+.links li a{
+    color: #fff;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.carousel-inner,
+.layer,
+.carousel-item{
+    height: 100%;
+    overflow: hidden;
+}
+
+.container-cards > div:not(:last-child){
+    margin-right: 40px;
+}
+.ourFutures{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+
+.links-container{
+    display: flex;
+}
+
+/*banner servicios*/
+.banner-services{
+    height:400px;
+    background:linear-gradient(90deg, rgba(80,71,93,0.5) 20%, rgba(33,55,82,0.5) 85%), url(http://wp.magnium-themes.com/thebuilt/thebuilt-8/wp-content/uploads/2016/03/photodune-5949525-builder-with-blueprint-shaking-partner-hand-m.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.banner-services h2{
+    font-weight: 300;
+    top: 50%;
+    left: 10%;
+    color:#fff;
+}
+
+/*seccion de cartas*/
+.cards{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    gap: 4rem;
+    grid-auto-rows: 33rem;
+    grid-template-columns:repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+}
+
+.card{
+    grid-column: span 1;
+    width:25rem;
+}
+
+.card-body{
+    background-color: #f5f5f5;
+   
+}
+.n-tittle{
+    margin: 40px 20px;
+}
+
+.n-tittle h6{
+    font-weight: 300;
+}
+
+/* baner final */
+
+.b-final{
+    background-color: #1c1e23;
+    margin-top:80px;
+    height: 300px;
+    transition: all;
+}
+
+.b-final div{
+    margin: auto;
+    text-align: center;
+}
+
+.b-final div a{
+    text-decoration: none;
+    color: #2A2F35;
+    padding: 10px 20px;
+    background-color: #FABF05;
+}
+
+.b-final:hover{
+    background:url(../sources/b-final.jpg);
+    background-size: cover;
+}
+
+/* botones personalizados */
+
+#btn{
+    text-decoration: none;
+    color: #2A2F35;
+    padding: 10px 20px;
+    background-color: #FABF05;
+    position: relative;
+    border: none;
+}
+
+#btn::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background-color: #2A2F35  ;
+    transition: width 0.5s;
+}
+
+#btn:hover::before{
+ width:100%;
+}
+#btn:hover span{
+    position: relative;
+    color: #fff;
+}
+
+/*menu hamburguesa */
+
+.nav-toggle{
+    display: none;
+}
+
+@media (max-width:900px){
+    .nav-toggle{
+        display: block;
+        background: transparent;
+        border: none;
+        
+    }
+    .nav-toggle i{
+        color:#fff;
+        font-size:24px;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-center{
+        display: block;
+    }
+    .links li {
+        display:block;
+    }
+    nav{
+        background-color: #1c1e23;
+    }
+
+    .links-container{
+        height: 0;
+        overflow: hidden;
+    }
+}
